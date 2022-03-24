@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świat muzyki</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel ="icon" href ="img/ikona2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+</head>
+<body>
+<!-- Page Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+        <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand"> <img src="img/ikona2.png" alt="ikona" width="55" height="60">
+                Świat muzyki
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" aria-current="page" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3 active" href="artysci.html">Artyści</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" aria-current="page" href="ranking.html">Rekordziści</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-5" aria-current="page" href="memory1.html">Gra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-6" href="formularz.html">Formularz</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+<div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/baner1.jpg"> </div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row mb-4">
+            <h2 class="col-12 tm-text-primary">
+                Artyści
+            </h2>
+        </div>
+        <div class="row tm-mb-74 tm-row-1640">            
+            <div class="col-lg-5 col-md-6 col-12">
+                <!-- Container for the image gallery -->
+                <div class="container">
+
+                    <!-- Full-width images with number text -->
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+
+                        <img src="music1.jpg" alt="baner" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="music2.jpg" alt="baner" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="music3.jpg" alt="baner" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="music4.jpg" alt="baner" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="music5.jpg" alt="baner" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="music6.jpg" alt="baner" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Image text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail images -->
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="music1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Music">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="music2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Music">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="music3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Music">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="music4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Music">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="music5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Music">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="music6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Music">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                
+            </div>
+            <div class="col-lg-7 col-md-6 col-12">
+                
+                <div class="tm-about-img-text">
+                    <p class="mb-4">
+                    Muzyka współczesna – dosłownie: muzyka tworzona współcześnie, dzisiaj. Potocznie jednak sformułowanie to używane jest wobec muzyki skomponowanej w XX wieku, przez muzykologów nazywanej raczej modernistyczną, ewentualnie awangardową, a w powszechnym rozumieniu odbieranej jako „nowoczesna”. Pojęcia te stosowane są wobec sztuki od końca XIX wieku w wyniku narastającego zdezorientowania szerokiej publiczności coraz bardziej indywidualną i coraz częściej zmieniającą się muzyką, której większość publiczności osłuchanej z muzyką XVIII i XIX wieku nie potrafiła zaakceptować.
+Aktualnie istnieje mnóstwo najróżniejszych gatunków oraz nurtów muzycznych. Każdy może znaleźć coś dla siebie, niektórzy są miłośnikami muzyki klasycznej, inni zaś zwolennikami popularngo, szczególnie w Polsce disco polo. Na tej stronie znajdziesz najważniejsze informacje, ciekawostki oraz fakty o najpopularniejszych artystach światowego formatu. Aby poznać tajniki danego artysty kliknij w jego zdjęcie!  
+                    </p></div>  
+                
+                
+                
+            </div>
+        </div>
+        <div class="row tm-mb-50">
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    <h2 class="tm-text-primary mb-4">
+                        Ariana Grande
+                    </h2>
+                        <a href="about_ariana.html"><img src="img/ari1.jpg" alt="ariana" class="responsive"></a>
+                </div>                
+            </div> 
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    <h2 class="tm-text-primary mb-4">
+                        Eminem
+                    </h2>
+                        <a href="about_eminem.html"><img src="img/emi1.jpg" alt="eminem" class="responsive"></a>
+                </div>               
+            </div>     
+        </div> <!-- row -->
+<div class="row tm-mb-50">
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    <h2 class="tm-text-primary mb-4">
+                        Drake
+                    </h2>
+                        <a href="about_drake.html"><img src="img/drake.jpg" alt="drake" class="responsive"></a>
+                </div> 
+                    
+             </div>                
+            <div class="col-md-6 col-12">
+                <div class="tm-about-2-col">
+                    <h2 class="tm-text-primary mb-4">
+                        Selena Gomez
+                    </h2>
+                        <a href="about_sg.html"><img src="img/sg1.jpg" alt="selena" class="responsive"></a>
+                </div>
+                </div>                   
+        </div> <!-- row -->
+    </div> <!-- container-fluid, tm-container-content -->
+
+    <footer class="tm-bg-gray pt-5 pb-3 tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Świat muzyki</h3>
+                    <p>Muzyczna strona internetowa przygotowana przez Klaudie Parczyńską 
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+<script src="js/animacja.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+    <script src="js/animacja.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "Artysci": [
+    {
+    "numer" : "1. ",
+    "flaga" : "https://www.countryflags.io/us/shiny/16.png",
+    "kraj" : "USA",
+    "imie" : "Ariana ",
+    "nazwisko" : "Grande"
+    },
+    {
+    "numer" : "2. ",
+    "flaga" : "https://www.countryflags.io/us/shiny/16.png",
+    "kraj" : "USA",
+    "imie" : "Marshall Bruce ",
+    "nazwisko" : "Mathers III"
+    },
+	{
+    "numer" : "3. ",
+    "flaga" : "https://www.countryflags.io/us/shiny/16.png",
+    "kraj" : "USA",
+    "imie" : "Aubrey Drake ",
+    "nazwisko" : "Graham"
+    },
+	{
+    "numer" : "4. ",
+    "flaga" : "https://www.countryflags.io/us/shiny/16.png",
+    "kraj" : "USA",
+    "imie" : "Selena ",
+    "nazwisko" : "Gomez"
+    }
+  ]
+}

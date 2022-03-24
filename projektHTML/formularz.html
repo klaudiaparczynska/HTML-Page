@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Świat muzyki </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tab.css">
+    <script src="js/walidacja.js"></script>
+    <link rel ="icon" href ="img/ikona2.png" type="image/x-icon" />
+</head>
+<body>
+    <!-- Page Loader -->
+        <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+                <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand"> <img src="img/ikona2.png" alt="ikona" width="55" height="60">
+                Świat muzyki
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-1" aria-current="page" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-3" href="artysci.html">Artyści</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-4" aria-current="page" href="ranking.html">Rekordziści</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-5" aria-current="page" href="memory1.html">Gra</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-6 active" href="formularz.html">Formularz</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/baner1.jpg"></div>
+
+    <div class="container-fluid tm-mt-60">
+        <div class="row tm-mb-50">
+            <div class="col-lg-4 col-12 mb-5">
+                <h2 class="tm-text-primary mb-5">Formularz</h2>
+                <form method="post" id="form" onsubmit="return sprawdz()" class="tm-form mx-auto">
+                    <div class="form-group">
+                        <input type="text" name="nick" id="nick" class="form-control rounded-0" placeholder="Nick" required />
+                        <span id="komunikat_nick" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <div class="container form-control">
+                        Wybierz swoją płeć
+                      <ul>
+                      <li>
+                        <input type="radio" id="kobieta" value="Kobieta" name="selector" checked>
+                        <label for="kobieta">Kobieta</label>
+
+                        <div class="check"></div>
+                      </li>
+
+                      <li>
+                        <input type="radio" id="mezczyzna" value="Mężczyzna" name="selector">
+                        <label for="mezczyzna">Mężczyzna</label>
+
+                        <div class="check"></div>
+                      </li>
+                    </ul>
+                        <span id="komunikat_radio" class="error"></span>
+                    </div>
+                    </div>
+                     <div class="form-group">
+                        <div class="container form-control">
+                        Wybierz ulubione gatunki muzyczne:
+                      <ul>
+                      <li>
+                        <input type="checkbox" id="pop" value="Pop" name="selector2">
+                        <label for="pop">Pop</label>
+
+                        <div class="check"></div>
+                      </li>
+
+                      <li>
+                        <input type="checkbox" id="rock" value="Rock" name="selector2">
+                        <label for="rock">Rock</label>
+                        <div class="check"></div>
+
+                      </li>
+                      
+                       <li>
+                        <input type="checkbox" id="hip-hop" value="Hip-Hop" name="selector2">
+                        <label for="hip-hop">Hip-Hop</label>
+                        <div class="check"></div>
+                      </li>
+                      
+                      <li>
+                        <input type="checkbox" id="inne" value="Inne" name="selector2">
+                        <label for="inne">Inne</label>
+                        
+                        <div class="check"></div>
+                      </li>
+                    </ul>
+                        
+                    </div>
+                         <span id="komunikat_check" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="Email" id="email" class="form-control rounded-0" placeholder="Email" required />
+                        <span id="komunikat_email" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="contact-select" name="czynnosc">
+                            <option value="Dodanie muzyka">Dodanie muzyka na stronę</option>
+                            <option value="Usunięcie muzyka">Usunięcie muzyka ze strony</option>
+                            <option value="Edycja danych">Edycja informacji o artyście</option>
+                        </select>
+                        <span id="komunikat_czynnosc"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="Dane" id="dane" class="form-control rounded-0" placeholder="Imie i Nazwisko muzyka" required />
+                        <span id="komunikat_dane" class="error"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" name="Szczegoly" id="szczegoly" class="form-control rounded-0" placeholder="Podaj szczegóły" required></textarea>
+                        <span id="komunikat_text" class="error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Wyślij</button>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="button" onclick="wyswietl()" class="btn btn-primary">Pokaż propozycje</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="wyczysc()" class="btn btn-primary">Usuń propozycje</button>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" onclick="sprawdz2()" class="btn btn-primary">Edycja propozycji</button>
+                        
+                    </div>
+                    <!--
+                    <div class="form-group">
+                    <input type="text" name="nr" id="nr" class="form-control rounded-0" placeholder="Numer Autora do edycji"/>
+                    </div>
+                    -->
+                </form>                
+            </div>
+            <div class="col-lg-4 col-12 mb-5">
+                <div class="tm-address-col">
+                    <h2 class="tm-text-primary mb-5">Pomóż nam sie rozwijać!</h2>
+                    <p class="tm-mb-50">Na tej stronie możesz znaleźć wiele muzycznych ciekawostek oraz faktów, jest to świetne źródło do poznawania 
+                    muzycznych tajników i nowości! </p>
+                    <p class="tm-mb-50">Jeśli zauważyłeś, że wśród przedstawionych artystów brakuje twojego ulubionego artysty
+                        oraz chciałbyś, aby więcej osób się o nim dowiedziało, śmiało wypełnij 
+                        nasz formularz argumentując dlaczego właśnie ten muzyk powinien być dodany. 
+                        Dzięki tobie na naszej stronie będą znajdować jedynie najlepsi artyści, 
+                        których każdy powinien znać! A może uważasz, że ktoś nie zasługuje na 
+                        miejsce na naszej stronie i powinien z niej zniknąć. Dzięki 
+                        formularzowi pomagasz nam rozwijać naszą stronę!</p>
+
+                    <h5 class="tm-text-primary mb-5">W razie wątpliwości lub chęci współpracy poniżej przedstawiamy nasze dane kontaktowe:</h5>
+                    <ul class="tm-contacts">
+                        <li>
+                            <a href="https://mail.google.com/mail/u/0/" class="tm-text-gray">
+                                <i class="fas fa-envelope"></i>
+                                Email: klaudia.parczynska@pollub.edu.pl
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.gov.pl/web/zweryfikuj-numer/weryfikacja" class="tm-text-gray">
+                                <i class="fas fa-phone"></i>
+                                Tel: 010-020-0340
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.pollub.pl/" class="tm-text-gray">
+                                <i class="fas fa-globe"></i>
+                                URL: www.pollub.pl
+                            </a>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+            <div class="col-lg-4 col-12" >
+                <div class="tm-address-col" >
+                    <h2 class="tm-text-primary mb-5">Artyści na stronie:</h2>
+                <p class="tm-mb-50" id="fff"><button class="btn btn-primary" type="button" id="fprzycisk">Pokaż artystów</button></p>
+                
+            </div>
+        </div>
+
+        <div class="row tm-mb-74 tm-people-row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+                <div id ="Propozycje">  
+                </div>
+                
+            </div>
+            
+        </div>
+        </div>
+    </div> <!-- container-fluid, tm-container-content -->
+    <footer class="tm-bg-gray pt-5 pb-3 tm-footer">
+        <div class="container-fluid tm-container-small">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-12 px-5 mb-5">
+                    <h3 class="tm-text-primary mb-4 tm-footer-title">Świat muzyki</h3>
+                    <p>Muzyczna strona internetowa przygotowana przez Klaudie Parczyńską 
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 px-5 mb-5">
+                    <ul class="tm-social-links d-flex justify-content-end pl-0 mb-5">
+                        <li class="mb-2"><a href="https://facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li class="mb-2"><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                        <li class="mb-2"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/plugins.js"></script>
+    <script>
+        $(window).on("load", function() {
+            $('body').addClass('loaded');
+        });
+    </script>
+</body>
+</html>
